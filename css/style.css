@@ -194,21 +194,18 @@ fieldset{
 	font-size: 1.2rem;
 	padding: 0 10px 5px 10px;
     }
-
-    input[type=text], input[type=E-mail], input[type=password], select, textarea{
-        padding: 5px 10px;
-        border-radius: 10px;
-        font-size: 18px;
-        margin: 3px 0 16px 0;
-        border: none;
-        background: #32161F;
-        color: #FFF;
-    }
     
-    input[type=text]:active, input[type=E-mail]:active, input[type=password]:active{
-        border-color: #18BBF7;
-    }
 
+}
+
+input[type=text], input[type=E-mail], input[type=password], select, textarea{
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 3px 0 16px 0;
+    border: none;
+    background: #32161F;
+    color: #FFF;
 }
 
 input[type=submit], input[type=reset]{
