@@ -1,0 +1,231 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #775B59;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+body > header {
+    background-color: #32161F;
+    height: 70px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a{
+        color: white;
+        text-decoration: none;
+        padding: 0 0 21px 0;
+    }
+
+    a.active{
+        color: #18BBF7;
+        border-bottom: 3px double #18BBF7;
+    }
+
+    a:hover{
+        color: #18BBF7;
+        border-bottom: 3px solid #18BBF7;
+    }
+
+    
+
+    .logotipo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        h1 span {
+                color: #18BBF7;
+            }
+        
+    }
+
+    nav ul {
+        display: flex;
+        height: 11px;
+        list-style-type: none;
+        font-size: smaller;
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+        color: #DAD2D8;
+    }
+
+   
+}
+
+body > main{
+    min-height: calc(100vh - 302px);
+    padding: 16px;
+	display: flex;
+	gap: 16px;
+	flex-wrap: wrap;
+
+    .cards{
+        width: 230px;
+        height: fit-content;
+        background-color: #32161F;
+        border-radius: 20px;
+        padding: 16px;
+
+         header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h2{
+                margin: 0;
+                font-size: 12px;
+
+                span{
+                    font-weight: normal;
+                    color: #ffffff73;
+                }
+            }
+
+            h1{
+                margin: 0;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+
+        main{
+
+            p{
+                font-size: 32px;
+                margin: 16px 0 2px 0;
+            }
+
+            span{
+                color: #ffffff73;
+            }
+
+            span:nth-child(2){
+                background-color: #02bb20;
+                height: fit-content;
+                padding: 3px 16px;
+                margin: 0 8px 0 0;
+                border-radius: 12px;
+                font-size: 14px;
+                color: #fff;
+            }
+
+        }
+
+        footer{
+            display: flex;
+            justify-content: space-between;
+            margin: 26px 0 0 0;
+
+            div:nth-child(2){
+                text-align: right;
+            }
+
+            div p {
+                margin: 0;
+                font-size: 18px;
+            }
+
+            div span{
+                font-size: 14px;
+                color: #ffffff73;
+            }
+        }
+
+       
+    }
+
+    
+}
+
+body > footer{
+    background-color: #32161F;
+    height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid #DAD2D8;
+    text-align: left;
+    padding: 8px;
+}
+
+tr{
+    &:nth-child(even){
+        background-color: #18bcf757;
+    }
+
+    &:nth-child(odd){
+        background-color: #14364285;
+    }
+}
+
+fieldset{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 0 0 30px 0;
+
+    h5{
+        font-size: 1.1rem;	
+    }
+
+    legend {
+	font-size: 1.2rem;
+	padding: 0 10px 5px 10px;
+    }
+
+    input[type=text], input[type=E-mail], input[type=password], select, textarea{
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 18px;
+        margin: 3px 0 16px 0;
+        border: none;
+        background: #32161F;
+        color: #FFF;
+    }
+    
+    input[type=text]:active, input[type=E-mail]:active, input[type=password]:active{
+        border-color: #18BBF7;
+    }
+
+}
+
+input[type=submit], input[type=reset]{
+    border: 1px solid #18BBF7;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color:#18bcf7ce;
+    font-size: 1.1rem;
+    margin: 16px 16px 16px 0px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover{
+	background: #18BBF7;
+}
+
+input[type=submit]:active, input[type=reset]:active{
+	background: #18bcf798;
+}
